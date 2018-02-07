@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fDR-TN-Znd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoMaruGothProN.ttc">
+            <string>HiraMaruProN-W4</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="oQ0-OE-XRA">
+            <objects>
+                <viewController id="fDR-TN-Znd" customClass="LoginViewController" customModule="POP_Routing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MY2-5v-9z3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUj-3C-QnC">
+                                <rect key="frame" x="35" y="313.5" width="305" height="60"/>
+                                <color key="backgroundColor" white="0.363525390625" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="tEk-Gx-swV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="33"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.88408745659722221" green="0.88543326187777771" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginTouch:" destination="fDR-TN-Znd" eventType="touchUpInside" id="CAr-Hz-FRg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WUj-3C-QnC" firstAttribute="centerY" secondItem="KLu-Fm-EYb" secondAttribute="centerY" id="5gT-5f-wvH"/>
+                            <constraint firstItem="WUj-3C-QnC" firstAttribute="leading" secondItem="KLu-Fm-EYb" secondAttribute="leading" constant="35" id="BdO-zX-dIv"/>
+                            <constraint firstItem="KLu-Fm-EYb" firstAttribute="trailing" secondItem="WUj-3C-QnC" secondAttribute="trailing" constant="35" id="cMV-SV-MPk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KLu-Fm-EYb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQt-l5-g1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="-134.48275862068968"/>
+        </scene>
+    </scenes>
+</document>
